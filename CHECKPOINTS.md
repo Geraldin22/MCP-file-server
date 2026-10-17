@@ -1,2 +1,2 @@
 ﻿# CHECKPOINTS
-(isang entry kada natapos na hakbang, may petsa)
+entries here with timestamp
