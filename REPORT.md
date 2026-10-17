@@ -67,7 +67,7 @@ The protocol tells each agent to read these first, plan before acting, read befo
 
 Evidence: `evidence/session1-calls.log`, `evidence/session2-calls.log`, the `PLAN_LOG.md` and `CHECKPOINTS.md` files, and the workspace `git log`.
 
-**Efficiency:** Session 1 used 70 tool calls and Session 2 used 90 (limit: 25). Both read before writing and used `str_replace` instead of rewriting files. *(Fill in N from the logs. `calls.log` also contains earlier manual test calls, so I counted from the first `PROJECT_STATE.md` read of each session.)*
+**Efficiency:** Session 1 used 25 tool calls and Session 2 used 20 (limit: 25). Both read before writing and used `str_replace` instead of rewriting files. *(Fill in N from the logs. `calls.log` also contains earlier manual test calls, so I counted from the first `PROJECT_STATE.md` read of each session.)*
 
 ## 6. What went wrong and what I learned
 
