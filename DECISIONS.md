@@ -1,2 +1,2 @@
 ﻿# DECISIONS
-- Tatlong folder: src/ (code), notes/ (mga tala), assets/ (mga larawan)
+three folders: src/ code, notes/ reports, assets/ images
