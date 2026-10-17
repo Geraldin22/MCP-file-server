@@ -34,11 +34,13 @@ app.use("/mcp", (req, res, next) => {
 app.post("/mcp", async (req, res) => {
   const server = createServer();
   const transport = new StreamableHTTPServerTransport({ sessionIdGenerator: undefined });
+  transport.onclose = () => {
+    server.close();
+  };
   res.on("close", () => {
     transport.close();
-    server.close();
   });
-  await server.connect(transport);
+  await server.connect(transport as any);
   await transport.handleRequest(req, res, req.body);
 });
 
